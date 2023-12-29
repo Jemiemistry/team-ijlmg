@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Good as news nav bar</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            // Shorthand for $( document ).ready()
+            $(function() {
+                $(".toggle").on("click", function() {
+                    
+                    if($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    }
+                    else{
+                        $(".item").addClass("active");
+                    }
+                })
+            });
+
+        </script>
+    </head>
+    <body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">Good As News</a></li>
+            <li class="item"><a href="#">Culture</a></li>
+            <li class="item"><a href="#">Technology</a></li>
+            <li class="item"><a href="#">Sports</a></li>
+            <li class="item button"><a href="#">Contact</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    </body>
+</html>
