@@ -283,6 +283,7 @@ cursor: pointer;
     .formElement:not(#subscribeButton) {
         width: 80%;
     }
+}
 
 /* Page2 */    
   
