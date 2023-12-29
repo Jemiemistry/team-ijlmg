@@ -12,6 +12,45 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
+#randomBoxContainer {
+    display: inline-block;
+    cursor: pointer;
+    width: calc(100% - 10px);
+    margin: 10px;
+}
+
+#randomBoxContainer .randomBox {
+    display: inline-block;
+    width: calc(50% - 10px);
+    text-align: center;
+    min-height: 150px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.randomBox p:not(#quote,#image) {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#randomQuoteBox {
+    background-color: var(--colour3);
+    margin-right: 5px;
+}
+
+#randomPictureBox {
+    background-color: var(--colour2);
+    margin-left: 5px;
+}
+
+#image {
+    max-width: 50%;
+}
+
 #footer {
     color: var(--colour4);
     text-align: center;
@@ -47,8 +86,12 @@ body {
     font-style: italic;
 }
 
-.footerLinks a:link {
-    color: inherit;
+/* .footerLinks a:hover {
+    color: var(--colour3);
+} */
+
+.footerLinks ul span {
+    color: var(--colour2)
 }
 
 .footerLinks ul li{
@@ -59,6 +102,7 @@ body {
 #footerFooter {
     background-color: var(--colour2);
     text-align: center;
+    padding: 8px;
 }
 
 @media only screen and (max-width: 480px) {
