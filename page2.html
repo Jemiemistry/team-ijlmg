@@ -16,12 +16,13 @@
                 <div class="left">
                     <h3 class="heading">Get in touch</h3>
                     <h6 class="h6">Submit your story to be featured</h6>
-                    <form action="#">
+                    <form method="get" action="#">
                         <div class="inputBox">
                             <input
                             type="text"
                             name="name"
                             class="name"
+                            id="name"
                             placeholder="Enter your name"
                             />
                         </div>
@@ -31,6 +32,7 @@
                             type="text"
                             name="email"
                             class="email"
+                            id="email"
                             placeholder="Enter your email address"
                             />
                         </div>
@@ -38,14 +40,17 @@
                         <div class="inputBox">
                             <textarea 
                             name="message" 
-                            class="message" 
+                            class="message"
+                            id="message"
                             placeholder="Enter your story ..."
                             ></textarea>
                         </div>
-    
-                        <button class="buttonPage2">Submit</button>
-    
                     </form>
+
+                    <p id="errorMessage"></p> 
+                    <br>     
+                    <button class="buttonPage2" id="buttonPage2">Submit</button>
+                          
                </div>
                 <div class="right">
                     <div class="illustration">
