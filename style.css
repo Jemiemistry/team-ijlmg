@@ -25,8 +25,8 @@ body {
 
 /* Header */
 
-nav {
-    background: #A8096F;
+nav {    
+    background: var(--colour1);
     padding: 5px 20px;
 }
 
@@ -40,8 +40,8 @@ a {
 }
 
 a:hover {
+    color: inherit;
     text-decoration: underline;
-    color: #000000;
 }
 
 .menu li{
@@ -53,12 +53,13 @@ a:hover {
     display:block;
 }
 
-.logo a {
-    font-size: 32px;
+.logo img {
+    width: 100%;
 }
 
+
 .button {
-    border-bottom: 1px #ffffff solid;
+    border-bottom: 1px solid;
 }
 
 /* Mobile Menu */
@@ -126,6 +127,10 @@ cursor: pointer;
     .logo {
         flex:1;
     }
+    .logo img {
+        width: 300px;
+    }
+
     .item.button {
         width:auto;
         order:1;
@@ -142,14 +147,13 @@ cursor: pointer;
     .button a {
         text-decoration: none;
         padding: 7px 24px;
-        background: #295f5a;
+        background: var(--colour3);
         border-radius: 50em;
     }
 
     .button a:hover {
         transition: all .25s;
-        background: #000000;
-        color: #ffffff;
+        background: var(--colour5);
     }
 }
 
@@ -163,6 +167,7 @@ cursor: pointer;
     }
     .logo{
         order:0;
+        width: 300px;
     }
     .item {
         order:1;
@@ -177,6 +182,7 @@ cursor: pointer;
     .menu li.button {
         padding-right: 0;
     }
+}
 
 /* Random generators */  
  
@@ -241,7 +247,6 @@ cursor: pointer;
 }
 
 #subscribeButton:hover {
-    color: navy;
     background-color: var(--colour5);
     border-color: var(--colour3);
 }
@@ -273,6 +278,12 @@ cursor: pointer;
 
 @media only screen and (max-width: 480px) {
 
+    #randomBoxContainer .randomBox {
+        display: block;
+        width: 90%;
+        margin: 20px;
+    }
+
     .formElement {
         display: block;
         width: 60%;
@@ -283,6 +294,7 @@ cursor: pointer;
     .formElement:not(#subscribeButton) {
         width: 80%;
     }
+}
 
 /* Page2 */    
   
@@ -291,7 +303,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ffffff;
+    background-color: var(--colour1);
 }
 
 .container {
@@ -314,19 +326,19 @@ cursor: pointer;
     font-size: 35px;
     font-weight: 600;
     line-height: 1;
-    color: #A8096F;
+    color: var(--colour1);
 }
 
 .h6 {
     font-size: 18px;
     font-weight: 600;
     line-height: 3;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
 }
 
 .text {
     font-size: 14px;
-    color: black;
+    /* color: black; */
     margin-top: 10px;
 }
 
@@ -368,7 +380,7 @@ form {
 
 .inputBox:not(.error) input:focus,
 .inputBox:not(.error) textarea:focus {
-    border-bottom: 1px solid #A8096F;
+    border-bottom: 1px solid var(--colour1);
 }
 
 .inputBox textarea {
@@ -381,6 +393,10 @@ form {
     color: rgb(255, 9, 9);
 }
 
+#errorMessage {
+    color: var(--colour1);
+}
+
 .buttonPage2 {
     width: 100%;
     display: inline-block;
@@ -388,15 +404,16 @@ form {
     font-size: 16px;
     font-weight: 600;
     border: none;
-    color: #ffffff;
-    background-color: #A8096F;
+    color: var(--colour4);
+    background-color: var(--colour1);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .buttonPage2:hover {
-    background-color: #05050596;
+    color: var(--colour1);
+    background-color: var(--colour4);
 }
 
 .right {
@@ -421,5 +438,5 @@ form {
     }
     .contact.info {
         margin-top: 40px;
-  }
+    }
 }
