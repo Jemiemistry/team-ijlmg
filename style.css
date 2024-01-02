@@ -295,6 +295,12 @@ cursor: pointer;
         width: 80%;
     }
 }
+/* Page 1 */
+
+.image {
+    border-radius: 6px;
+}
+
 
 /* Page2 */    
   
