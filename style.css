@@ -60,6 +60,33 @@ a:hover {
     border-bottom: 1px solid;
 }
 
+/* Main Body */
+
+.column {
+    background-size: cover;
+    background-position: center top;
+    float: left;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .row::after {
+    clear: both;
+    display: table;
+    height: 100%;
+  }
+
+  .caption {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 /* Mobile Menu */
 .menu {
     display:flex;
