@@ -598,8 +598,9 @@ form {
 
 .column h3{
     text-align: center;
-    color: #fe9ac9;
+    color: #black;
     margin-bottom: 5px;
+    text-decoration: bold;
 }
 
 .column p{
